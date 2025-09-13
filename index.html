@@ -1,1 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashish Vashist — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ashish Vashist — ML & Computer Vision researcher." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
+      --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071021 0%, #071826 60%);color:#e6eef6;font-family:var(--mono);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:68px;height:68px;border-radius:12px;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:34px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:22px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+    h1{font-size:32px;margin:0 0 6px}
+    p.lead{color:var(--muted);margin-top:6px;line-height:1.6}
+
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .pill{background:var(--glass);padding:10px 12px;border-radius:10px;color:var(--muted);font-weight:600}
+
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:#d9e9f0;font-weight:700;font-size:13px}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
+    .project{padding:14px;border-radius:12px;background:rgba(255,255,255,0.02);}
+    .project h4{margin:0 0 8px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    aside.right{position:relative}
+    .contact-card{display:flex;flex-direction:column;gap:14px}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+
+    footer{margin-top:40px;color:var(--muted);text-align:center;font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+    }
+
+    a.cta{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042028;font-weight:800;text-decoration:none}
+
+    .socials{display:flex;gap:12px}
+    .socials a{color:var(--muted);text-decoration:none;font-weight:700}
+    .socials a:hover{color:var(--accent)}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <img src="assets/avatar.jpg" alt="Ashish">
+        </div>
+        <div>
+          <div style="font-weight:800">Ashish Vashist</div>
+          <div style="font-size:13px;color:var(--muted)">Research Assistant · Computer Vision & ML</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h1>Hi — I’m Ashish. I build computer vision models for sim2real and research systems.</h1>
+        <p class="lead">Research Assistant at AIRL Lab. Working on real-time sim2real vision and object detection/segmentation. I enjoy turning research ideas into reproducible code and production-ready experiments.</p>
+
+        <div class="meta">
+          <div class="pill">📍 Bengaluru, India</div>
+          <div class="pill">🎓 BTech CSE</div>
+          <div class="pill">💼 Open to research collaborations</div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div style="font-weight:800;margin-bottom:8px">Selected projects</div>
+          <div class="projects" id="projects">
+            <article class="project">
+              <h4>RT-DETR Improvements</h4>
+              <p>Hybrid encoder for better real-time detection — super-resolution upsampling + custom upsampling.</p>
+            </article>
+            <article class="project">
+              <h4>CrossModal 3D Scene Retrieval</h4>
+              <p>Scene-level alignment across RGB, pointclouds, and floorplans (ScanNet / 3RScan).</p>
+            </article>
+            <article class="project">
+              <h4>YOLOv8 Instance Segmentation</h4>
+              <p>Dataset pipelines and real-time evaluation for custom COCO-format datasets.</p>
+            </article>
+            <article class="project">
+              <h4>Open-source Tooling</h4>
+              <p>Scripts and reproducible configs for model training and inference on HPC/Colab.</p>
+            </article>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div style="font-weight:800;margin-bottom:8px">Contact</div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <a class="cta" href="#contact">Get in touch</a>
+            <div class="socials">
+              <a href="https://github.com/" target="_blank">GitHub</a>
+              <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+              <a href="mailto:ashish@example.com">Email</a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="right">
+        <div class="card contact-card">
+          <div style="font-weight:800">Stats</div>
+          <div class="stat"><div>Projects</div><div>12</div></div>
+          <div class="stat"><div>Publications</div><div>1</div></div>
+          <div class="stat"><div>Years in ML</div><div>3</div></div>
+
+          <div style="height:1px;background:rgba(255,255,255,0.03);margin:10px 0;border-radius:2px"></div>
+
+          <div style="font-weight:800">Skills</div>
+          <div class="skills" id="skills">
+            <div class="skill">PyTorch</div>
+            <div class="skill">Computer Vision</div>
+            <div class="skill">Object Detection</div>
+            <div class="skill">Segmentation</div>
+            <div class="skill">Python</div>
+            <div class="skill">Linux</div>
+          </div>
+
+          <div style="height:1px;background:rgba(255,255,255,0.03);margin:10px 0;border-radius:2px"></div>
+          <div style="font-weight:800">Resume</div>
+          <div><a href="assets/resume.pdf" class="pill" target="_blank">Download PDF</a></div>
+        </div>
+
+        <div style="margin-top:16px" class="card">
+          <div style="font-weight:800">Availability</div>
+          <p style="color:var(--muted);margin:6px 0 0">Open to collaborations, internships, and research discussions.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer id="contact">
+      <div style="margin-bottom:8px">Want the source? This is a single-file template you can host on GitHub Pages.</div>
+      <div style="color:var(--muted)">© 2025 Ashish Vashist — Built with ♥ · Hosted on GitHub Pages</div>
+    </footer>
+  </div>
+</body>
+</html>
 
