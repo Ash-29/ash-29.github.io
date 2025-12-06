@@ -55,40 +55,6 @@ a:hover {
   opacity: 0.75;
 }
 
-/* NAVBAR */
-.navbar {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 28px var(--page-padding) 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-left .nav-name,
-.nav-name {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: -0.3px;
-}
-
-.nav-right {
-  display: flex;
-  gap: 28px;
-}
-
-.nav-right a {
-  font-size: 15px;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.nav-right a:hover {
-  color: var(--text-primary);
-  opacity: 1;
-}
-
 /* MAIN CONTENT */
 main {
   max-width: var(--content-width);
@@ -98,7 +64,7 @@ main {
 
 /* HERO SECTION */
 .hero {
-  margin: 60px 0 50px;
+  margin: 80px 0 50px;
   display: flex;
   gap: 70px;
   align-items: flex-start;
@@ -229,7 +195,7 @@ main {
 /* AFFILIATIONS / LOGOS */
 .affiliations {
   margin: 50px 0 40px;
-  padding: 28px 0;
+  padding: 0;
 }
 
 .affiliation-logos {
@@ -237,7 +203,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .affiliation-logos img {
@@ -277,18 +244,10 @@ main {
 
 /* RESPONSIVE RULES */
 @media (max-width: 900px) {
-  .navbar {
-    padding: 20px var(--page-padding);
-  }
-
-  .nav-right {
-    gap: 20px;
-  }
-
   .hero {
     flex-direction: column-reverse;
     gap: 40px;
-    margin: 40px 0 40px;
+    margin: 60px 0 40px;
   }
 
   .hero-content {
@@ -330,18 +289,6 @@ main {
 }
 
 @media (max-width: 640px) {
-  .navbar {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
-  .nav-right {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 16px;
-  }
-
   .hero-name {
     font-size: 36px;
   }
@@ -399,7 +346,6 @@ a:focus:not(:focus-visible) {
 
 /* PRINT STYLES */
 @media print {
-  .navbar,
   .footer {
     display: none;
   }
