@@ -154,25 +154,13 @@ main {
   opacity: 1;
 }
 
-/* SOCIAL LINKS INLINE */
-.social-links-inline {
-  margin-top: 20px;
-  font-size: 15px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.social-links-inline a {
-  color: var(--link-color);
-  font-weight: 500;
-}
-
 /* HERO RIGHT (IMAGE) */
 .hero-right {
   flex: 0 0 340px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
   padding-top: 8px;
 }
 
@@ -184,6 +172,41 @@ main {
   border: 2px solid var(--border-light);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   background: #fff;
+}
+
+/* VERTICAL SOCIAL LINKS */
+.vertical-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 340px;
+}
+
+.vertical-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.vertical-links a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  opacity: 1;
+}
+
+.vertical-links svg {
+  flex-shrink: 0;
+}
+
+/* Remove old inline social links style */
+.social-links-inline {
+  display: none;
 }
 
 /* AFFILIATIONS / LOGOS */
@@ -284,11 +307,16 @@ main {
   .hero-right {
     width: 100%;
     padding-top: 0;
+    flex: 1;
   }
 
   .hero-image {
     width: 280px;
     height: 340px;
+  }
+
+  .vertical-links {
+    max-width: 280px;
   }
 
   .affiliation-logos {
@@ -328,6 +356,15 @@ main {
   .hero-image {
     width: 240px;
     height: 300px;
+  }
+
+  .vertical-links {
+    max-width: 240px;
+    font-size: 14px;
+  }
+
+  .vertical-links a {
+    padding: 8px 12px;
   }
 
   .section-title {
