@@ -101,7 +101,7 @@ main {
 .hero {
   margin: 60px 0 50px;
   display: flex;
-  gap: 60px;
+  gap: 70px;
   align-items: flex-start;
 }
 
@@ -169,20 +169,20 @@ main {
 
 /* HERO RIGHT (IMAGE) */
 .hero-right {
-  flex: 0 0 240px;
+  flex: 0 0 340px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 8px;
 }
 
-.hero-image-circle {
-  width: 240px;
-  height: 240px;
+.hero-image {
+  width: 340px;
+  height: 420px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 16px;
   border: 2px solid var(--border-light);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   background: #fff;
 }
 
@@ -286,9 +286,9 @@ main {
     padding-top: 0;
   }
 
-  .hero-image-circle {
-    width: 200px;
-    height: 200px;
+  .hero-image {
+    width: 280px;
+    height: 340px;
   }
 
   .affiliation-logos {
@@ -325,9 +325,9 @@ main {
     font-size: 15px;
   }
 
-  .hero-image-circle {
-    width: 180px;
-    height: 180px;
+  .hero-image {
+    width: 240px;
+    height: 300px;
   }
 
   .section-title {
