@@ -194,6 +194,11 @@ main {
   fill: #4285f4;
 }
 
+.vertical-links a:nth-child(6) svg {
+  /* CV - Gray/Dark */
+  stroke: #555555;
+}
+
 /* Remove old inline social links style */
 .social-links-inline {
   display: none;
@@ -281,6 +286,11 @@ papertitle {
   font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
+  display: inline;
+}
+
+.research-section strong papertitle {
+  font-weight: 900;
 }
 
 .research-section em {
