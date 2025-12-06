@@ -245,6 +245,86 @@ main {
   letter-spacing: -0.3px;
 }
 
+/* RESEARCH SECTION */
+.research-section {
+  margin: 60px 0;
+  border: none;
+}
+
+.research-interest {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+}
+
+.paper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.paper-image {
+  flex: 0 0 180px;
+}
+
+.paper-image img {
+  width: 180px;
+  height: auto;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+.paper-content {
+  flex: 1;
+}
+
+.paper-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.paper-authors {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0 0 6px 0;
+  line-height: 1.5;
+}
+
+.paper-authors strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.paper-venue {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0 0 8px 0;
+}
+
+.paper-links {
+  margin: 8px 0 0 0;
+}
+
+.paper-links a {
+  color: #dc143c;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.paper-links a:hover {
+  border-bottom-color: #dc143c;
+  opacity: 0.8;
+}
+
 /* FOOTER */
 .footer {
   text-align: center;
@@ -300,6 +380,27 @@ main {
   .affiliation-logos img {
     height: 45px;
   }
+
+  .paper {
+    gap: 20px;
+  }
+
+  .paper-image {
+    flex: 0 0 150px;
+  }
+
+  .paper-image img {
+    width: 150px;
+  }
+
+  .paper-title {
+    font-size: 17px;
+  }
+
+  .paper-authors,
+  .paper-venue {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -344,6 +445,31 @@ main {
 
   .affiliation-logos img {
     height: 35px;
+  }
+
+  .paper {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .paper-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .paper-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .paper-title {
+    font-size: 16px;
+  }
+
+  .paper-authors,
+  .paper-venue,
+  .paper-links a {
+    font-size: 14px;
   }
 }
 
