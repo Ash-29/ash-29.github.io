@@ -1,0 +1,236 @@
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left .nav-name {
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.nav-right a {
+  margin-left: 22px;
+  font-size: 15.5px;
+  opacity: 0.75;
+}
+
+.nav-right a:hover {
+  opacity: 1;
+}
+
+/* ===========================
+   HERO SECTION
+   =========================== */
+
+.hero {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-content {
+  flex: 1.25;
+}
+
+.hero-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-size: 19px;
+  font-weight: 500;
+  opacity: 0.75;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  font-size: 17px;
+  opacity: 0.92;
+  margin-bottom: 20px;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image {
+  width: 340px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ===========================
+   SECTION BASE
+   =========================== */
+
+.section {
+  max-width: 1100px;
+  margin: 90px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-family: Georgia, serif;
+}
+
+.section-text {
+  font-size: 17px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.section-list li {
+  font-size: 17px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* ===========================
+   PUBLICATIONS
+   =========================== */
+
+.pub {
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+.pub strong {
+  font-weight: 600;
+}
+
+.pub .authors {
+  display: block;
+  font-size: 15px;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+/* ===========================
+   EXPERIENCE BLOCKS
+   =========================== */
+
+.experience-block {
+  margin-bottom: 25px;
+}
+
+.experience-block h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.experience-block p {
+  font-size: 16px;
+  opacity: 0.88;
+}
+
+/* ===========================
+   PROJECT CARDS
+   =========================== */
+
+.project-card {
+  margin-bottom: 22px;
+}
+
+.project-card strong {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.project-card p {
+  margin: 4px 0 0;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* ===========================
+   CONTACT
+   =========================== */
+
+#contact p {
+  font-size: 17px;
+  margin-bottom: 12px;
+  opacity: 0.9;
+}
+
+#contact a {
+  font-weight: 500;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+
+  .hero-image {
+    width: 260px;
+    margin-bottom: 30px;
+  }
+
+  .nav-right {
+    display: none; /* same minimal mobile navbar style as Aditya */
+  }
+}
