@@ -178,7 +178,7 @@ main {
 .vertical-links {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   width: 100%;
   max-width: 340px;
 }
@@ -187,12 +187,12 @@ main {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px;
+  padding: 8px 12px;
   color: var(--text-primary);
   font-size: 15px;
   font-weight: 500;
-  border-radius: 8px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
 .vertical-links a:hover {
@@ -202,6 +202,32 @@ main {
 
 .vertical-links svg {
   flex-shrink: 0;
+}
+
+/* Brand Colors for Icons */
+.vertical-links a:nth-child(1) svg {
+  /* Email - Blue */
+  stroke: #0066cc;
+}
+
+.vertical-links a:nth-child(2) svg {
+  /* LinkedIn - LinkedIn Blue */
+  fill: #0077b5;
+}
+
+.vertical-links a:nth-child(3) svg {
+  /* GitHub - Black */
+  fill: #181717;
+}
+
+.vertical-links a:nth-child(4) svg {
+  /* X/Twitter - Black */
+  fill: #000000;
+}
+
+.vertical-links a:nth-child(5) svg {
+  /* Google Scholar - Blue */
+  fill: #4285f4;
 }
 
 /* Remove old inline social links style */
@@ -364,7 +390,12 @@ main {
   }
 
   .vertical-links a {
-    padding: 8px 12px;
+    padding: 7px 10px;
+  }
+
+  .vertical-links svg {
+    width: 16px;
+    height: 16px;
   }
 
   .section-title {
