@@ -218,19 +218,16 @@ papertitle {
     text-align: center;
   }
 
-  .paper-img {
+ .paper-img {
   width: 100%;
   max-width: 340px;
-  height: 190px;
 
-  object-fit: contain;   /* 🔥 KEY FIX */
-  background: #ffffff;   /* fills empty space */
-  padding: 6px;
+  height: auto;            /* ✅ KEY FIX */
+  object-fit: contain;
 
   border-radius: 10px;
   border: 1px solid var(--border-light);
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-  transition: 0.25s ease;
 }
 }
 
