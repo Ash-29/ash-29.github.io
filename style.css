@@ -220,14 +220,14 @@ papertitle {
 
  .paper-img {
   width: 100%;
-  max-width: 340px;
-
-  height: auto;            /* ✅ KEY FIX */
-  object-fit: contain;
-
+  max-width: 300px;
+  height: auto;           /* Remove fixed height */
+  object-fit: contain;    /* Show full image, no cropping */
   border-radius: 10px;
   border: 1px solid var(--border-light);
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+  background: #f9f9f9;    /* Optional: fills empty space if image has transparency */
 }
 }
 
