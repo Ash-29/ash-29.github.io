@@ -29,68 +29,68 @@ body {
 
 .institution {
     font-size: 12px;
-    color: #444;
-    margin-top: 6px;
+    color: #555;
+    margin-top: 8px;
     text-align: center;
-}
-
-.instilogo {
-    height: 60px;
-    max-width: 100%;
-    object-fit: contain;
+    line-height: 1.3;
 }
 
 /* Affiliations layout */
 .affil-section {
-    padding: 24px 0 40px;
+    padding: 28px 0 48px;
 }
 
 .affil-row-top {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 
 .affil-row-rest {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 28px 24px;
+    gap: 32px 36px;
 }
 
 .affil-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 110px;
+    width: 120px;
     text-decoration: none !important;
+    background: none !important;
 }
 
 .affil-item:hover {
     opacity: 1;
+    text-decoration: none !important;
 }
 
-.affil-item .instilogo {
+.instilogo {
+    height: 72px;
+    max-width: 130px;
+    object-fit: contain;
+    background: none;
+    border: none;
+    box-shadow: none;
     transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
-    opacity: 0.7;
-    filter: grayscale(20%);
+    opacity: 0.65;
+    filter: grayscale(15%);
 }
 
 .affil-item:hover .instilogo {
-    transform: translateY(-5px) scale(1.1);
+    transform: translateY(-6px) scale(1.12);
     opacity: 1;
     filter: grayscale(0%);
 }
 
 .affil-item-cmu .instilogo {
-    height: 90px;
-}
-
-.instilogo {
-    height: 70px;
-    max-width: 100%;
-    object-fit: contain;
+    height: 100px;
+    max-width: 200px;
+    opacity: 0.8;
 }
 
 a {
@@ -119,8 +119,9 @@ a:hover {
 }
 
 .header-1 {
-    font-size: 1.8rem;
-    color: #444;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #333;
 }
 
 .news-scroll {
@@ -147,10 +148,10 @@ a:hover {
 }
 
 .allstuffp {
-    max-width: 1240px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .section-nav {
@@ -227,7 +228,7 @@ html.theme-dark .section-nav-links::-webkit-scrollbar-thumb {
 .section-nav-link {
     color: #002147;
     font-weight: 500;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     white-space: nowrap;
 }
 
@@ -341,8 +342,20 @@ html.theme-dark .header-1 {
     color: #e8ecf4;
 }
 
+html.theme-dark .section-nav-link {
+    color: #d4dbf0;
+}
+
 html.theme-dark .institution {
     color: #c8ced9;
+}
+
+html.theme-dark .instilogo {
+    filter: grayscale(15%) invert(0.85) brightness(1.1);
+}
+
+html.theme-dark .affil-item:hover .instilogo {
+    filter: grayscale(0%) invert(0.85) brightness(1.2);
 }
 
 html.theme-dark a {
