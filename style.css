@@ -12,16 +12,16 @@ body {
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     font-weight: 300;
     color: #444;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.65;
     background-color: #fbfbfb;
     overflow-x: hidden;
 }
 
 .name {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
     font-weight: 400;
-    color: #222;
-    letter-spacing: -0.01em;
+    color: #333;
 }
 
 .sideimg {
@@ -81,15 +81,13 @@ body {
     border: none !important;
     box-shadow: none !important;
     display: block;
-    transition: transform 0.28s ease, opacity 0.28s ease, filter 0.28s ease;
-    opacity: 0.6;
-    filter: grayscale(20%);
+    transition: transform 0.28s ease, opacity 0.28s ease;
+    opacity: 0.75;
 }
 
 .affil-item:hover .instilogo {
     transform: translateY(-7px) scale(1.13);
     opacity: 1;
-    filter: grayscale(0%);
 }
 
 .affil-item-cmu .instilogo {
@@ -124,10 +122,9 @@ a:hover {
 }
 
 .header-1 {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    color: #333;
-    letter-spacing: -0.01em;
+    color: #444;
 }
 
 .news-scroll {
@@ -286,9 +283,8 @@ html.theme-dark .section-nav-links::-webkit-scrollbar-thumb {
 }
 
 .papertitle {
-    font-weight: 500;
-    font-size: 1rem;
-    color: #222;
+    font-weight: 400;
+    font-size: 0.95rem;
 }
 
 .menu-item {
@@ -357,12 +353,22 @@ html.theme-dark .institution {
     color: #c8ced9;
 }
 
+/* In dark mode use screen blend so white PNG backgrounds vanish */
+html.theme-dark .affil-section {
+    background: transparent;
+}
+
 html.theme-dark .instilogo {
-    filter: grayscale(15%) invert(0.85) brightness(1.1);
+    mix-blend-mode: screen;
+    filter: none;
+    opacity: 0.85;
 }
 
 html.theme-dark .affil-item:hover .instilogo {
-    filter: grayscale(0%) invert(0.85) brightness(1.2);
+    mix-blend-mode: screen;
+    filter: none;
+    opacity: 1;
+    transform: translateY(-7px) scale(1.13);
 }
 
 html.theme-dark a {
