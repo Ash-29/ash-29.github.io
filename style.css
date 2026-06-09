@@ -22,37 +22,39 @@ body {
 
 .sideimg {
     width: 100%;
-    max-width: 180px;
+    max-width: 240px;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .institution {
-    font-size: 14px;
+    font-size: 12px;
     color: #444;
     margin-top: 6px;
-}
-
-.years {
-    font-size: 13px;
-    color: #888;
-    margin-top: 2px;
+    text-align: center;
 }
 
 .instilogo {
-    height: 72px;
+    height: 60px;
     max-width: 100%;
     object-fit: contain;
 }
 
-#affiliations + .row {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    row-gap: 1rem;
+/* Affiliations one-line flex row */
+.affil-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px 20px;
+    padding: 32px 0 40px;
 }
 
-#affiliations + .row > .mx-auto {
-    padding-left: 14px;
-    padding-right: 14px;
+.affil-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
 }
 
 a {
@@ -239,7 +241,12 @@ html.theme-dark .section-nav-links::-webkit-scrollbar-thumb {
 }
 
 .papertitle {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.menu-item {
+    margin-top: 10px;
 }
 
 .menulink {
@@ -281,7 +288,9 @@ a.pub-ref-link.conf-bio:hover {
 /* ===========================
    DARK MODE
    =========================== */
-html.theme-dark body {
+html.theme-dark body,
+html.theme-dark .container,
+html.theme-dark .allstuffp {
     background-color: #1a1d23;
     color: #e0e4ec;
 }
@@ -296,10 +305,6 @@ html.theme-dark .header-1 {
 
 html.theme-dark .institution {
     color: #c8ced9;
-}
-
-html.theme-dark .years {
-    color: #8f98a8;
 }
 
 html.theme-dark a {
@@ -410,32 +415,11 @@ html.theme-dark .sideimg {
    RESPONSIVE
    =========================== */
 @media only screen and (max-width: 575.98px) {
-    #affiliations + .row {
-        padding-bottom: 1.25rem;
-        row-gap: 1rem;
+    .affil-item {
+        width: 80px;
     }
-
-    #affiliations + .row .mx-auto {
-        flex: 0 0 auto;
-        width: 50%;
-        max-width: 180px;
-    }
-
-    #affiliations + .row > .mx-auto {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
-    #affiliations + .row .instilogo {
-        height: 58px;
-    }
-
-    #affiliations + .row .institution {
-        font-size: 13px;
-    }
-
-    #affiliations + .row .years {
-        font-size: 12px;
+    .instilogo {
+        height: 48px;
     }
 }
 
