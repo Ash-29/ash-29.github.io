@@ -95,7 +95,7 @@ main {
   align-items: center;
 }
 .affiliation-logos img {
-  height: 60px;
+  height: 80px;
   width: auto;
   opacity: 0.65;
   transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease;
