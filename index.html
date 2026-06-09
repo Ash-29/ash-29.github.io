@@ -11,9 +11,18 @@
 		<meta name="description" content="Incoming MS in Machine Learning student at CMU. Researcher working on VLMs, Sim2Real systems, and foundation models.">
 
 		<title>Ashish Vashist | Incoming MSML @ Carnegie Mellon University</title>
-		<meta name="theme-color" content="#1a1d23" id="theme-color-meta">
+		<meta name="theme-color" content="#fbfbfb" id="theme-color-meta">
 		<script>
-		(function(){try{var m=document.getElementById('theme-color-meta');var t=localStorage.getItem('theme');var dark=t!=='light';if(dark)document.documentElement.classList.add('theme-dark');if(m)m.setAttribute('content',dark?'#1a1d23':'#fbfbfb');}catch(e){document.documentElement.classList.add('theme-dark');var m=document.getElementById('theme-color-meta');if(m)m.setAttribute('content','#1a1d23');}})();
+		(function(){
+			try {
+				var t = localStorage.getItem('theme');
+				if (t === 'dark') {
+					document.documentElement.classList.add('theme-dark');
+					var m = document.getElementById('theme-color-meta');
+					if (m) m.setAttribute('content', '#1a1d23');
+				}
+			} catch(e) {}
+		})();
 		</script>
 
 		<!-- Bootstrap CSS -->
@@ -29,7 +38,6 @@
 				</button>
 				<div class="section-nav-links">
 					<a class="section-nav-link" href="#about">About</a>
-					<a class="section-nav-link" href="#timeline">Timeline</a>
 					<a class="section-nav-link" href="#publications">Publications</a>
 					<a class="section-nav-link" href="#affiliations">Affiliations</a>
 				</div>
@@ -43,33 +51,27 @@
 						<img lsrc="assets/ashish.png" class="profilepic mt-3 rounded shadow mb-3" alt="Ashish Vashist">
 						<div class="pt-4 menur">
 							<a class="menulink" target="_blank" href="https://drive.google.com/file/d/1Z7qhG-ei616WKA5EFKxCNnW7Imx5Dhec/view?usp=sharing">
-								<i class="fas fa-file-alt"></i>
-								CV / Resume</a>
+								<i class="fas fa-file-alt"></i>&nbsp;CV / Resume</a>
 						</div>
-						<div class="">
+						<div class="menu-item">
 							<a class="menulink" target="_blank" href="mailto:ashishvashist2002@gmail.com">
-								<i class="fas fa-envelope"></i>
-								ashishvashist2002 [at] gmail</a>
+								<i class="fas fa-envelope"></i>&nbsp;ashishvashist2002 [at] gmail</a>
 						</div>
-						<div class="">
+						<div class="menu-item">
 							<a class="menulink" target="_blank" href="https://github.com/Ash-29">
-								<i class="fab fa-github"></i>
-								GitHub</a>
+								<i class="fab fa-github"></i>&nbsp;GitHub</a>
 						</div>
-						<div class="">
+						<div class="menu-item">
 							<a class="menulink" target="_blank" href="https://www.linkedin.com/in/ashish-vashist-8a183320a/">
-								<i class="fab fa-linkedin-in"></i>
-								LinkedIn</a>
+								<i class="fab fa-linkedin-in"></i>&nbsp;LinkedIn</a>
 						</div>
-						<div class="">
+						<div class="menu-item">
 							<a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=qjspvi8AAAAJ&hl=en&authuser=1">
-								<i class="ai ai-google-scholar ai-1x"></i>
-								Google Scholar</a>
+								<i class="ai ai-google-scholar ai-1x"></i>&nbsp;Google Scholar</a>
 						</div>
-						<div class="">
+						<div class="menu-item">
 							<a class="menulink" target="_blank" href="https://x.com/v_ashish29">
-								<i class="fab fa-twitter"></i>
-								Twitter / X</a>
+								<i class="fab fa-twitter"></i>&nbsp;Twitter / X</a>
 						</div>
 					</div>
 				</div>
@@ -91,146 +93,135 @@
 					When I am not working on research, you will find me at the swimming pool, listening to <a class="in-text" href="https://open.spotify.com/show/3OkY4EXCzUC599h8z0mZ62" target="_blank">Business Movers</a>, learning new languages, or defending why Rohit Sharma's pull shot is the most elegant thing cricket has ever produced.
 					<br><br>
 					<b>I'd love to chat about AI or collaborate on projects, so feel free to reach out for a virtual coffee chat!</b>
-					<br><br>
-					Last Updated: 06/09/2026
-
-					<!-- TIMELINE -->
-					<div class="header-1 pt-5 section-anchor" id="timeline">Timeline</div>
-					<div class="news-scroll mt-3">
-						<div class="news-item"><b>• Jun 2026:</b> Medmarks workshop version paper accepted at <b>ICML 2026 FM4LS Workshop</b>.</div>
-						<div class="news-item"><b>• Apr 2026:</b> Admitted to <b>CMU MLD</b> as an MSML student for Fall 2026!</div>
-					</div>
 
 					<!-- PUBLICATIONS -->
 					<div class="header-1 pt-5 section-anchor" id="publications">Publications</div>
 					<p class="text-left mb-2 pub-legend">C=Conference, P=Preprint, W=Workshop</p>
 
 					<div class="row mt-3 section-anchor" id="pub-medmarks">
-						<div class="col-md-2 my-auto">
+						<div class="col-md-3 my-auto">
 							<img class="sideimg" lsrc="assets/medmark.png" alt="Medmarks">
 						</div>
-						<div class="col-lg-10">
+						<div class="col-md-9">
 							<p class="paper my-2 pl-2">
-								<span class="papertitle">
-									[W.1] Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks
-								</span>
+								<span class="papertitle">[W.1] Medmarks: A Comprehensive Open-Source LLM Benchmark Suite for Medical Tasks</span>
 								<br>
 								Benjamin Warner, ..., <span class="thisauthor">Ashish Vashist</span>, et al.
 								<br>
 								<b>ICML 2026 FM4LS Workshop</b>
 								<br>
 								<i>Preprint</i>, 2026
-								<a class="tag" href="https://arxiv.org/abs/2605.01417" target="_blank">Paper</a>
 								<br>
+								<a class="tag" href="https://arxiv.org/abs/2605.01417" target="_blank">Paper</a>
 							</p>
 						</div>
 					</div>
 					<br>
 
 					<div class="row section-anchor" id="pub-geolocalization">
-						<div class="col-md-2 my-auto">
+						<div class="col-md-3 my-auto">
 							<img class="sideimg" lsrc="assets/geolocalization.png" alt="Geolocalization">
 						</div>
-						<div class="col-lg-10">
+						<div class="col-md-9">
 							<p class="paper my-2 pl-2">
-								<span class="papertitle">
-									[C.3] Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization
-								</span>
+								<span class="papertitle">[C.3] Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</span>
 								<br>
 								Siddhant Bharadwaj, <span class="thisauthor">Ashish Vashist</span>, Fahimul Aleem, Shruti Vyas
 								<br>
 								<b>CVPR Workshop (Earthvision), 2026</b>
-								<a class="tag" href="https://arxiv.org/abs/2604.16248" target="_blank">Paper</a>
 								<br>
+								<a class="tag" href="https://arxiv.org/abs/2604.16248" target="_blank">Paper</a>
 							</p>
 						</div>
 					</div>
 					<br>
 
 					<div class="row section-anchor" id="pub-beyond-accuracy">
-						<div class="col-md-2 my-auto">
+						<div class="col-md-3 my-auto">
 							<img class="sideimg" lsrc="assets/beyond_accuracy.png" alt="Beyond Accuracy">
 						</div>
-						<div class="col-lg-10">
+						<div class="col-md-9">
 							<p class="paper my-2 pl-2">
-								<span class="papertitle">
-									[C.2] Beyond Accuracy: Evaluating Visual Grounding In Multimodal Medical Reasoning
-								</span>
+								<span class="papertitle">[C.2] Beyond Accuracy: Evaluating Visual Grounding In Multimodal Medical Reasoning</span>
 								<br>
 								Anas Zafar, Leema Krishna Murali, <span class="thisauthor">Ashish Vashist</span>
 								<br>
 								<b>ICLR Workshop (Causal AI-CAO), 2026</b>
-								<a class="tag" href="https://arxiv.org/abs/2603.03437" target="_blank">Paper</a>
 								<br>
+								<a class="tag" href="https://arxiv.org/abs/2603.03437" target="_blank">Paper</a>
 							</p>
 						</div>
 					</div>
 					<br>
 
 					<div class="row section-anchor" id="pub-vlm">
-						<div class="col-md-2 my-auto">
+						<div class="col-md-3 my-auto">
 							<img class="sideimg" lsrc="assets/vlm.png" alt="VLM Diagnostics">
 						</div>
-						<div class="col-lg-10">
+						<div class="col-md-9">
 							<p class="paper my-2 pl-2">
-								<span class="papertitle">
-									[C.1] Multiscale Diagnostics of Visual Language Models
-								</span>
+								<span class="papertitle">[C.1] Multiscale Diagnostics of Visual Language Models</span>
 								<br>
 								Siddhant Bharadwaj, <span class="thisauthor">Ashish Vashist</span>, Mohd Azfar, Rohit Kumar Salla, Divyansh Verma, Ramya Manasa Amancherla
 								<br>
 								<b>ICCV Workshop (CV4DC), 2025</b>
-								<a class="tag" href="https://drive.google.com/file/d/1X8sgpmNBwMt0rCEsAwdg7KiBl6ffQj7f/view" target="_blank">Paper</a>
 								<br>
+								<a class="tag" href="https://drive.google.com/file/d/1X8sgpmNBwMt0rCEsAwdg7KiBl6ffQj7f/view" target="_blank">Paper</a>
 							</p>
 						</div>
 					</div>
 					<br>
 
 					<div class="row section-anchor" id="pub-fods2r">
-						<div class="col-md-2 my-auto">
+						<div class="col-md-3 my-auto">
 							<img class="sideimg" lsrc="assets/fods2r.png" alt="FOD-S2R">
 						</div>
-						<div class="col-lg-10">
+						<div class="col-md-9">
 							<p class="paper my-2 pl-2">
-								<span class="papertitle">
-									[P.1] FOD-S2R: A FOD Dataset for Sim2Real Transfer Learning based Object Detection
-								</span>
+								<span class="papertitle">[P.1] FOD-S2R: A FOD Dataset for Sim2Real Transfer Learning based Object Detection</span>
 								<br>
 								<span class="thisauthor">Ashish Vashist</span>, Qiranul Saadiyean, Suresh Sundaram, Chandra Sekhar Seelamantula
 								<br>
 								<b>arXiv, 2025</b>
-								<a class="tag" href="https://arxiv.org/abs/2512.01315" target="_blank">Paper</a>
 								<br>
+								<a class="tag" href="https://arxiv.org/abs/2512.01315" target="_blank">Paper</a>
 							</p>
 						</div>
 					</div>
 
 					<!-- AFFILIATIONS -->
 					<div class="header-1 pt-5 section-anchor" id="affiliations">Affiliations</div>
-					<div class="row text-center py-5">
-						<div class="mx-auto mt-2">
-							<img class="img-fluid instilogo" lsrc="assets/iisc.png" alt="IISc">
-							<div class="institution">Indian Institute of Science</div>
-							<div class="years">2023 – 2025</div>
-						</div>
-						<div class="mx-auto mt-2">
-							<img class="img-fluid instilogo" lsrc="assets/cohere.png" alt="Cohere for AI">
-							<div class="institution">Cohere for AI</div>
-							<div class="years">2025 – 2026</div>
-						</div>
-						<div class="mx-auto mt-2">
+					<div class="affil-row">
+						<div class="affil-item">
 							<img class="img-fluid instilogo" lsrc="assets/cmu.png" alt="CMU">
 							<div class="institution">Carnegie Mellon University</div>
-							<div class="years">2026 – Present</div>
+						</div>
+						<div class="affil-item">
+							<img class="img-fluid instilogo" lsrc="assets/nus.png" alt="NUS">
+							<div class="institution">National University of Singapore</div>
+						</div>
+						<div class="affil-item">
+							<img class="img-fluid instilogo" lsrc="assets/iisc.png" alt="IISc">
+							<div class="institution">Indian Institute of Science</div>
+						</div>
+						<div class="affil-item">
+							<img class="img-fluid instilogo" lsrc="assets/ucf.png" alt="UCF">
+							<div class="institution">University of Central Florida</div>
+						</div>
+						<div class="affil-item">
+							<img class="img-fluid instilogo" lsrc="assets/cohere.png" alt="Cohere">
+							<div class="institution">Cohere for AI</div>
+						</div>
+						<div class="affil-item">
+							<img class="img-fluid instilogo" lsrc="assets/qmul.png" alt="QMUL">
+							<div class="institution">Queen Mary University of London</div>
+						</div>
+						<div class="affil-item">
+							<img class="img-fluid instilogo" lsrc="assets/boeing.png" alt="Boeing">
+							<div class="institution">Boeing</div>
 						</div>
 					</div>
 
-					<div class="col-12 px-0">
-						<a class="menulink source-link" target="_blank" href="https://github.com/Ash-29/ash-29.github.io">
-							<i class="fa fa-external-link" aria-hidden="true"></i>
-							Website source</a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -255,7 +246,6 @@
 				icon.className = dark ? 'fas fa-sun theme-toggle-icon' : 'fas fa-moon theme-toggle-icon';
 				btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
 				btn.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
-				btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
 				if (metaTheme) metaTheme.setAttribute('content', dark ? '#1a1d23' : '#fbfbfb');
 			}
 			applyIcon();
