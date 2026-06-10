@@ -70,27 +70,26 @@ body {
 }
 
 .instilogo {
-    height: 72px;
-    max-width: 130px;
+    height: 90px;
+    max-width: 170px;
     object-fit: contain;
-    background: none;
-    border: none;
-    box-shadow: none;
-    transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
-    opacity: 0.65;
-    filter: grayscale(15%);
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: block;
+    transition: transform 0.28s ease, opacity 0.28s ease;
+    opacity: 0.8;
 }
 
 .affil-item:hover .instilogo {
-    transform: translateY(-6px) scale(1.12);
+    transform: translateY(-7px) scale(1.13);
     opacity: 1;
-    filter: grayscale(0%);
 }
 
 .affil-item-cmu .instilogo {
-    height: 100px;
-    max-width: 200px;
-    opacity: 0.8;
+    height: 130px;
+    max-width: 260px;
+    opacity: 0.85;
 }
 
 a {
