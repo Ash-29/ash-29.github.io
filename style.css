@@ -52,20 +52,17 @@ body {
 
 .affil-row-rest {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    gap: 32px 36px;
+    align-items: center;
+    gap: 50px 70px; /* vertical horizontal gap */
 }
 
 .affil-item {
+    width: 180px; /* bigger container */
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 120px;
-    text-decoration: none !important;
-    background: none !important;
 }
 
 .affil-item:hover {
@@ -74,8 +71,8 @@ body {
 }
 
 .instilogo {
-    height: 90px;
-    max-width: 170px;
+    height: 120px;      /* was 90px */
+    max-width: 220px;   /* was 170px */
     object-fit: contain;
     background: transparent !important;
     border: none !important;
